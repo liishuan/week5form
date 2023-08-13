@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="d-flex">
+      <!-- sidebar -->
+      <%- include('./layout/sidebar'); -%>
+      <div class="p-8">
+        <!-- header 要包在容器裡面 -->
+        <%- include('./layout/header'); -%>
+        <div class="content">
+          <div class="list">
+            <!-- 用select? -->
+            <div class="mb-1 d-flex">
+              <p class="mr-2">All (4)</p>
+              <a href="#"
+                ><span class="material-symbols-outlined"> expand_more </span>
+              </a>
+            </div>
+            <div class="list-group">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action active"
+                aria-current="true"
+              >
+                <div class="d-flex justify-content-between mb-1">
+                  <p class="font-s">Chapter Assignment 2</p>
+                  <p class="font-s">4 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="bold">Please check this file…</p>
+                  <p class="font-s t-gray">Emily Wang</p>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between mb-1">
+                  <p class="font-s">Chapter Assignment 1</p>
+                  <p class="font-s">12 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="bold">My Homework</p>
+                  <p class="font-s t-gray">David Xu</p>
+                </div></a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                ><div class="d-flex justify-content-between mb-1">
+                  <p class="font-s">Final Assignment</p>
+                  <p class="font-s">18 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="bold">Have a problem with this…</p>
+                  <p class="font-s t-gray">Tony Wei</p>
+                </div></a
+              >
+
+              <a href="#" class="list-group-item list-group-item-action"
+                ><div class="d-flex justify-content-between mb-1">
+                  <p class="font-s">Final Assignment</p>
+                  <p class="font-s">19 hrs ago</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="bold">Did I do it right?</p>
+                  <p class="font-s t-gray">Christina Lin</p>
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="messages"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 導入bs5 js cdn -->
+    <!-- Bootstrap JS -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 導入js語法不要刪 -->
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

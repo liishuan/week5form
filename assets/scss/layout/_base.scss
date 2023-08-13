@@ -1,0 +1,35 @@
+/*全站樣式*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei",
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  // outline: 1px solid salmon;
+}
+
+body {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #198754;
+}
