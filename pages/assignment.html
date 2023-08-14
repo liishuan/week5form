@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>Assignment</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
     <!-- icon cdn -->
@@ -29,18 +29,24 @@
     <div class="d-flex">
       <!-- sidebar -->
       <%- include('./layout/sidebar'); -%>
-      <div class="p-8">
-        <!-- header 要包在容器裡面 -->
+
+      <!-- 右邊整個區塊 -->
+      <div class="mainContent p-8">
         <%- include('./layout/header'); -%>
-        <div class="content">
-          <div class="list">
+        <div
+          class="full-width d-flex justify-content-between align-items-center"
+        >
+          <a href="#" class="d-flex mb-1">
+            <p class="mr-2 bold">All (4)</p>
+            <span class="material-symbols-outlined"> expand_more </span>
+          </a>
+          <a href="#"> <p class="font-s t-gray text-end mb-2">2 comments</p></a>
+        </div>
+        <div class="content d-flex">
+          <!-- 右邊選單 -->
+          <div class="list mr-4">
             <!-- 用select? -->
-            <div class="mb-1 d-flex">
-              <p class="mr-2">All (4)</p>
-              <a href="#"
-                ><span class="material-symbols-outlined"> expand_more </span>
-              </a>
-            </div>
+
             <div class="list-group">
               <a
                 href="#"
@@ -89,7 +95,130 @@
               >
             </div>
           </div>
-          <div class="messages"></div>
+          <!-- 右邊回應欄 -->
+          <div class="full-width">
+            <!-- 訊息方框 學生＋老師 -->
+
+            <div class="massage mb-5-5">
+              <div class="massageHeader bg-gray border-bottom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="title">
+                    <p class="font-s">Chapter Assignment 2 / HTML&CSS</p>
+                    <p class="bold">Please check this file for me, thanks!</p>
+                  </div>
+                  <a href="#"
+                    ><span class="material-symbols-outlined">
+                      more_vert
+                    </span></a
+                  >
+                </div>
+              </div>
+
+              <!-- massage body -->
+              <div class="massageBody">
+                <!-- 學生回應的個人資訊 -->
+                <div class="userInfo d-flex align-items-center p-4">
+                  <div class="landscape mr-2">
+                    <img src="../assets/images/emilywang.jpeg" alt="emily" />
+                  </div>
+                  <div class="name">
+                    <p class="bold mb-1">Emily Wang</p>
+                    <p class="t-gray font-m">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+
+                <!-- 學生回覆的內容 -->
+                <div class="massageText border-bottom">
+                  <p class="mb-4">
+                    Hi Teacher, the attached file is my homework of chapter 2.
+                    And here comes a question: Why in the following code the
+                    height of the <span class="highlight">div</span> is bigger
+                    than the height of the <span class="highlight">img</span> ?
+                    There is a gap below the image, but it doesn’t seems to be a
+                    padding/margin. What is the gap or extra space below image?
+                  </p>
+                  <a class="btn btn-primary">
+                    <div class="d-flex">
+                      <span class="material-symbols-outlined mr-2">
+                        attach_file </span
+                      >HW-2-David.zip
+                    </div>
+                  </a>
+                </div>
+
+                <!-- 老師回應的個人資訊 -->
+                <div class="userInfo d-flex align-items-center">
+                  <div class="landscape mr-2">
+                    <img src="../assets/images/andychen.jpeg" alt="andy" />
+                  </div>
+
+                  <div class="full-width d-flex justify-content-between">
+                    <div class="name">
+                      <p class="bold mb-1">Andy Chen (You)</p>
+                      <p class="t-gray font-m">13:24 AM (1 hours ago)</p>
+                    </div>
+                    <ul class="d-flex">
+                      <li class="mr-6">
+                        <a href="#">
+                          <span class="material-symbols-outlined">
+                            star
+                          </span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><span class="material-symbols-outlined">
+                            edit
+                          </span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 老師回覆的內容 -->
+                <div class="massageText">
+                  <p class="mb-4">
+                    Hi David, by default, an image is rendered inline, like a
+                    letter so it sits on the same line that a, b, c and d sit
+                    on. There is space below that line for the descenders you
+                    find on letters like g, j, p and q.
+                    <br />
+                    <br />
+
+                    You can: 　
+                    <br />
+                    <br />
+
+                    　• adjust the
+                    <span class="highlight">vertical-align</span> of the image
+                    to position it elsewhere (e.g. the
+                    <span class="highlight">middle</span> ) or
+                    <br />
+                    　• change the
+                    <span class="highlight">display</span> so it isn’t inline.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="massageFooter d-flex justify-content-between">
+              <div class="d-flex">
+                <a href="#"
+                  ><span class="material-symbols-outlined mr-6">
+                    chevron_left
+                  </span></a
+                >
+                <a href="#"
+                  ><span class="material-symbols-outlined">
+                    chevron_right
+                  </span></a
+                >
+              </div>
+              <div class="d-flex">
+                <a href="#" class="btn btn-success mr-4">Mark as read</a>
+                <a href="#" class="btn btn-success">Reply</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

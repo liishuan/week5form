@@ -1,3 +1,9 @@
+// 右邊整個區塊
+.mainContent {
+  width: 100%;
+}
+
+// 右邊選單
 .list-group {
   width: 320px;
 }
@@ -5,5 +11,59 @@
 .list-group-item.active {
   background-color: #f8f9fa;
   color: #212529;
+  border-color: #ced4da;
+}
+
+// 右邊回應欄
+
+.massage {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.massage .bg-gray {
+  padding: 12px 16px;
+}
+
+.userInfo {
+  padding: 17.5px 32px 16px 16px;
+}
+
+.massageText {
+  margin: 0px 32px 0px 64px;
+}
+
+.highlight {
+  background-color: #f8f9fa;
+  color: #198754;
+  padding: 0px 2px 0px 2px;
+  font-family: "Roboto Mono";
+}
+
+.btn {
+  margin-bottom: 17.5px;
+}
+
+.btn-primary {
+  background-color: #f8f9fa;
+  border-color: #ced4da;
+  color: #212529;
+}
+
+.btn-primary:hover {
+  color: #f8f9fa;
+  background-color: #198754;
+  border-color: #ced4da;
+}
+
+.btn-success {
+  color: #198754;
+  background-color: #fff;
+  border-color: #198754;
+}
+
+.btn-success:hover {
+  color: #f8f9fa;
+  background-color: #198754;
   border-color: #ced4da;
 }
