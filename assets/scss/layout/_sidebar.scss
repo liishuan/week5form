@@ -2,7 +2,9 @@
   width: 296px;
   max-height: 2000px;
 }
-
+.greenHover a:hover {
+  border-left: 4px solid #198754;
+}
 // 把頭貼變圓不變形的方式
 .landscape {
   overflow: hidden;

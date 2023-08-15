@@ -48,22 +48,34 @@
   background-color: #f8f9fa;
   border-color: #ced4da;
   color: #212529;
+  border-radius: 2px;
 }
 
 .btn-primary:hover {
   color: #f8f9fa;
   background-color: #198754;
   border-color: #ced4da;
+  border-radius: 2px;
 }
 
 .btn-success {
   color: #198754;
   background-color: #fff;
   border-color: #198754;
+  border-radius: 2px;
 }
 
 .btn-success:hover {
   color: #f8f9fa;
   background-color: #198754;
   border-color: #ced4da;
+  border-radius: 2px;
+}
+
+// reply裡面
+
+textarea {
+  border: none;
+  display: block;
+  padding: 16px 24px;
 }

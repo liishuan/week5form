@@ -36,7 +36,12 @@
           <div class="d-flex align-items-center">
             <h2 class="font-l bold mr-12-5">Admin</h2>
 
-            <a href="#" class="d-flex">
+            <a
+              href="#"
+              class="d-flex"
+              data-bs-toggle="modal"
+              data-bs-target="#addAuthorInfo"
+            >
               <span class="material-symbols-outlined mr-2"> add </span>
               <p class="bold">Add New Admin</p>
             </a>
@@ -77,10 +82,40 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr data-bs-toggle="modal" data-bs-target="#viewAuthorInfo">
               <th scope="row">#1</th>
               <td>Emir Wicks</td>
               <td>emir.wicks@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <!-- Button trigger modal viewAuthorInfo-->
+                <a href="#">
+                  <span
+                    class="material-symbols-outlined mr-6"
+                    data-bs-toggle="modal"
+                    data-bs-target="#viewAuthorInfo"
+                  >
+                    visibility
+                  </span>
+                </a>
+
+                <!-- Button trigger modal editAuthorInfo-->
+                <a href="#"
+                  ><span
+                    class="material-symbols-outlined"
+                    data-bs-toggle="modal"
+                    data-bs-target="#editAuthorInfo"
+                  >
+                    edit
+                  </span></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">#2</th>
+              <td>Zaina Goldsmith</td>
+              <td>zaina.goldsmith@mail.com</td>
               <td>Yes</td>
               <td class="text-end">
                 <a href="#">
@@ -88,6 +123,7 @@
                     visibility
                   </span>
                 </a>
+
                 <a href="#"
                   ><span class="material-symbols-outlined"> edit </span></a
                 >
@@ -95,9 +131,9 @@
             </tr>
 
             <tr>
-              <th scope="row">#1</th>
-              <td>Emir Wicks</td>
-              <td>emir.wicks@mail.com</td>
+              <th scope="row">#3</th>
+              <td>Mahima Lopez</td>
+              <td>mahima.lopez@mail.com</td>
               <td>Yes</td>
               <td class="text-end">
                 <a href="#">
@@ -105,6 +141,133 @@
                     visibility
                   </span>
                 </a>
+
+                <a href="#"
+                  ><span class="material-symbols-outlined"> edit </span></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">#4</th>
+              <td>Pharrell Murray</td>
+              <td>pharrell.murray@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <a href="#">
+                  <span class="material-symbols-outlined mr-6">
+                    visibility
+                  </span>
+                </a>
+
+                <a href="#"
+                  ><span class="material-symbols-outlined"> edit </span></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">#5</th>
+              <td>Annika Mcbride</td>
+              <td>annika.mcbride@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <a href="#">
+                  <span class="material-symbols-outlined mr-6">
+                    visibility
+                  </span>
+                </a>
+
+                <a href="#"
+                  ><span class="material-symbols-outlined"> edit </span></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">#6</th>
+              <td>Fatimah Clark</td>
+              <td>fatimah.clark@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <a href="#">
+                  <span class="material-symbols-outlined mr-6">
+                    visibility
+                  </span>
+                </a>
+
+                <a href="#"
+                  ><span class="material-symbols-outlined"> edit </span></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">#7</th>
+              <td>Klaudia Rhodes</td>
+              <td>klaudia.rhodes@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <a href="#">
+                  <span class="material-symbols-outlined mr-6">
+                    visibility
+                  </span>
+                </a>
+
+                <a href="#"
+                  ><span class="material-symbols-outlined"> edit </span></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">#8</th>
+              <td>Tillie Lucero</td>
+              <td>tillie.lucero@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <a href="#">
+                  <span class="material-symbols-outlined mr-6">
+                    visibility
+                  </span>
+                </a>
+
+                <a href="#"
+                  ><span class="material-symbols-outlined"> edit </span></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">#9</th>
+              <td>Sabrina Stephenson</td>
+              <td>sabrina.stephenson@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <a href="#">
+                  <span class="material-symbols-outlined mr-6">
+                    visibility
+                  </span>
+                </a>
+
+                <a href="#"
+                  ><span class="material-symbols-outlined"> edit </span></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">#10</th>
+              <td>Annie Smith</td>
+              <td>annie.smith@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <a href="#">
+                  <span class="material-symbols-outlined mr-6">
+                    visibility
+                  </span>
+                </a>
+
                 <a href="#"
                   ><span class="material-symbols-outlined"> edit </span></a
                 >
@@ -112,6 +275,403 @@
             </tr>
           </tbody>
         </table>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span
+                  aria-hidden="true"
+                  class="material-symbols-outlined font-regular"
+                >
+                  chevron_left
+                </span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span
+                  aria-hidden="true"
+                  class="material-symbols-outlined font-regular"
+                >
+                  chevron_right
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Modal viewAuthorInfo 作者檔案-->
+      <div
+        class="modal fade"
+        id="viewAuthorInfo"
+        tabindex="-1"
+        aria-labelledby="viewAuthorInfo"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="content d-flex justify-content-between full-width">
+                <div class="d-flex">
+                  <div class="authorPic mr-6"></div>
+                  <div class="info">
+                    <p>#1</p>
+                    <p>Admin</p>
+                    <p class="font-l bold">Emir Wicks</p>
+                    <p class="font-m t-gray mb-3">emir.wicks@mail.com</p>
+                    <span class="font-m bg-gray">Verified</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <a href="#">
+                    <span class="material-symbols-outlined"> close </span>
+                  </a>
+                  <a href="#">
+                    <span class="material-symbols-outlined"> expand_more </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal editAuthorInfo 編輯-->
+      <div
+        class="modal fade"
+        id="editAuthorInfo"
+        tabindex="-1"
+        aria-labelledby="editAuthorInfo"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title bold font-l" id="editAuthorInfo">
+                Edit Admin
+              </p>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="account">
+                <p class="font-ml mb-4">Account</p>
+
+                <form action="" method="post">
+                  <label for="myName" class="mb-1">Name</label>
+                  <br />
+                  <input
+                    class="p-4 mb-4 bg-gray full-width"
+                    id="myName"
+                    name="myName"
+                    type="text"
+                    value="Emir Wicks"
+                  />
+                  <br />
+                  <label class="mb-1" for="email">Email</label>
+                  <br />
+
+                  <input
+                    class="p-4 mb-4 bg-gray full-width"
+                    id="myEmail"
+                    name="myEmail"
+                    type="text"
+                    value="emir.wicks@mail.com"
+                  />
+                </form>
+              </div>
+
+              <div class="verification">
+                <p class="font-ml mb-4">Verification</p>
+                <div class="d-flex mb-4-5 justify-content-between">
+                  <div class="d-flex">
+                    <span class="t-green material-symbols-outlined mr-2-5">
+                      check_circle
+                    </span>
+                    <p class="bold">Verified</p>
+                  </div>
+                  <p class="font-m">2020/4/12</p>
+                </div>
+                <form action="" method="post">
+                  <label class="mb-1" for="email">Email</label>
+                  <br />
+                  <input
+                    class="p-4 mb-4 bg-gray full-width"
+                    id="myEmail"
+                    name="myEmail"
+                    type="text"
+                    value="emir.wicks@mail.com"
+                  />
+                  <br />
+                </form>
+              </div>
+
+              <div class="level">
+                <p class="font-ml mb-4">Access Level</p>
+                <select
+                  name="Access Level"
+                  id="Access Level"
+                  class="full-width p-4 mb-4"
+                >
+                  <option>Admin</option>
+                  <option>Admin1</option>
+                  <option>Admin2</option>
+                </select>
+              </div>
+
+              <div class="custom">
+                <p class="font-ml mb-4">Custom Access</p>
+
+                <form action="" method="post">
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Lecture"
+                    />
+                    <label class="form-check-label" for="Lecture">
+                      Lecture
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Coupon"
+                    />
+                    <label class="form-check-label" for="Coupon">
+                      Coupon
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Message"
+                    />
+                    <label class="form-check-label" for="Message">
+                      Message
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Setting"
+                    />
+                    <label class="form-check-label" for="Setting">
+                      Setting
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Task Menu"
+                    />
+                    <label class="form-check-label" for="Task Menu">
+                      Task Menu
+                    </label>
+                  </div>
+                </form>
+              </div>
+
+              <div class="deactivate mb-12">
+                <p class="font-ml mb-4">Deactivate Account</p>
+
+                <div class="d-flex mb-5">
+                  <span class="material-symbols-outlined mr-2 t-red">
+                    warning
+                  </span>
+                  <p class="t-red">This cannot be undone!</p>
+                </div>
+
+                <button type="button" class="btn btn-danger">
+                  Deactivate This Account
+                </button>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-success mr-4"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-success">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal addAuthorInfo 新增-->
+      <div
+        class="modal fade"
+        id="addAuthorInfo"
+        tabindex="-1"
+        aria-labelledby="addAuthorInfo"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title bold font-l" id="editAuthorInfo">
+                New Admin
+              </p>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="account">
+                <p class="font-ml mb-4">Account</p>
+
+                <form action="" method="post">
+                  <label for="myName" class="mb-1">Name</label>
+                  <br />
+                  <input
+                    class="p-4 mb-4 bg-gray full-width border-black"
+                    id="myName"
+                    name="myName"
+                    type="text"
+                  />
+                  <br />
+                  <label class="mb-1" for="email">Email</label>
+                  <br />
+
+                  <input
+                    class="p-4 mb-4 bg-gray full-width border-black"
+                    id="myEmail"
+                    name="myEmail"
+                    type="text"
+                  />
+                </form>
+              </div>
+
+              <div class="verification">
+                <p class="font-ml mb-4">Verification</p>
+
+                <div class="d-flex mb-4-5">
+                  <span class="material-symbols-outlined mr-2 t-red">
+                    warning
+                  </span>
+
+                  <p class="bold">Unverified</p>
+                </div>
+                <button type="button" class="btn btn-success full-width">
+                  Send Verification Mail
+                </button>
+              </div>
+
+              <div class="level">
+                <p class="font-ml mb-4">Access Level</p>
+                <select
+                  name="Access Level"
+                  id="Access Level"
+                  class="full-width p-4 mb-4"
+                >
+                  <option>-Choose access level-</option>
+                  <option>Admin1</option>
+                  <option>Admin2</option>
+                </select>
+              </div>
+
+              <div class="custom">
+                <p class="font-ml mb-4">Custom Access</p>
+
+                <form action="" method="post">
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Lecture"
+                    />
+                    <label class="form-check-label" for="Lecture">
+                      Lecture
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Coupon"
+                    />
+                    <label class="form-check-label" for="Coupon">
+                      Coupon
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Message"
+                    />
+                    <label class="form-check-label" for="Message">
+                      Message
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Setting"
+                    />
+                    <label class="form-check-label" for="Setting">
+                      Setting
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="Task Menu"
+                    />
+                    <label class="form-check-label" for="Task Menu">
+                      Task Menu
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-success mr-4"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-success">Add</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
