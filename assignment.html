@@ -24,59 +24,63 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <script type="module" crossorigin src="/week5form/assets/main-37b74e4f.js"></script>
-    <link rel="stylesheet" href="/week5form/assets/main-db0eb339.css">
+    <script type="module" crossorigin src="/week5form/assets/main-08ed0edb.js"></script>
+    <link rel="stylesheet" href="/week5form/assets/main-596aaaca.css">
   </head>
   <body>
     <div class="d-flex">
       <!-- sidebar -->
       <!-- sidebar -->
-<div class="d-flex flex-column justify-content-between sidebar p-8 bg-gray">
+<div class="d-flex flex-column justify-content-between sidebar bg-gray">
   <div>
-    <h1 class="mb-8">
+    <h1 class="p-8">
       <a href="#">
         <img src="/week5form/assets/logo-ANSWER-5336fb45.svg" alt="logo" />
       </a>
     </h1>
-    <ul class="mb-40">
+    <ul class="mb-40 greenHover">
       <li class="bold mb-7-5">
         <a href="#" class="d-flex">
-          <span class="material-symbols-outlined mr-4"> insert_chart </span>
+          <span class="material-symbols-outlined mr-4 ml-8">
+            insert_chart
+          </span>
           <h3>Dashboard</h3>
         </a>
       </li>
 
       <li class="bold mb-7-5">
         <a href="#" class="d-flex">
-          <span class="material-symbols-outlined mr-4"> forum </span>
+          <span class="material-symbols-outlined mr-4 ml-8"> forum </span>
           <h3>Question</h3>
         </a>
       </li>
 
       <li class="bold mb-7-5">
         <a href="../pages/assignment.html" class="d-flex">
-          <span class="material-symbols-outlined mr-4"> assignment </span>
+          <span class="material-symbols-outlined mr-4 ml-8"> assignment </span>
           <h3>Assignment</h3>
         </a>
       </li>
 
       <li class="bold mb-7-5">
         <a href="#" class="d-flex">
-          <span class="material-symbols-outlined mr-4"> video_library </span>
+          <span class="material-symbols-outlined mr-4 ml-8">
+            video_library
+          </span>
           <h3>Course</h3>
         </a>
       </li>
 
       <li class="bold mb-7-5">
         <a href="../pages/admin.html" class="d-flex">
-          <span class="material-symbols-outlined mr-4"> group </span>
+          <span class="material-symbols-outlined mr-4 ml-8"> group </span>
           <h3>Admin</h3>
         </a>
       </li>
 
       <li class="bold">
         <a href="#" class="d-flex">
-          <span class="material-symbols-outlined mr-4"> Settings </span>
+          <span class="material-symbols-outlined mr-4 ml-8"> Settings </span>
           <h3>Settings</h3>
         </a>
       </li>
@@ -304,10 +308,147 @@
                   </span></a
                 >
               </div>
+
+              <!-- 不知道怎麼把他釘在下面.....-->
+
+              <!-- Button trigger modal -->
               <div class="d-flex">
-                <a href="#" class="btn btn-success mr-4">Mark as read</a>
-                <a href="#" class="btn btn-success">Reply</a>
+                <button type="button" class="btn btn-success mr-4">
+                  Mark as read
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#replyTextArea"
+                >
+                  Reply
+                </button>
               </div>
+
+              <!-- Modal -->
+
+              <div
+                class="modal fade"
+                id="replyTextArea"
+                tabindex="-1"
+                aria-labelledby="replyTextArea"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header bg-gray">
+                      <div class="d-flex align-items-center">
+                        <div class="dropdow mr-6">
+                          <a
+                            class="btn dropdown-toggle m-0"
+                            href="#"
+                            role="button"
+                            id="dropdownMenuLink"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Body Text
+                          </a>
+
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuLink"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Body Text1</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Body Text2</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Body Text3</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <ul class="d-flex">
+                          <li class="mr-6">
+                            <a href="#">
+                              <span class="material-symbols-outlined">
+                                format_bold
+                              </span>
+                            </a>
+                          </li>
+
+                          <li class="mr-6">
+                            <a href="#">
+                              <span class="material-symbols-outlined">
+                                format_italic
+                              </span>
+                            </a>
+                          </li>
+
+                          <li class="mr-6">
+                            <a href="#">
+                              <span class="material-symbols-outlined">
+                                format_list_bulleted
+                              </span>
+                            </a>
+                          </li>
+
+                          <li class="mr-6">
+                            <a href="#">
+                              <span class="material-symbols-outlined">
+                                image
+                              </span>
+                            </a>
+                          </li>
+
+                          <li class="mr-6">
+                            <a href="#">
+                              <span class="material-symbols-outlined">
+                                link
+                              </span>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <span class="material-symbols-outlined">
+                                code
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="modal-body">
+                      <textarea
+                        class="full-width"
+                        id="replyTextArea"
+                        name="replyTextArea"
+                        rows="5"
+                        cols="33"
+                        placeholder="Reply an answer…"
+                      >
+                      </textarea>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-success mr-4"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button type="button" class="btn btn-success">
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 嗜血4 -->
             </div>
           </div>
         </div>
