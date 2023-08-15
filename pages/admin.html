@@ -29,7 +29,92 @@
     <div class="d-flex">
       <!-- sidebar -->
       <%- include('./layout/sidebar'); -%>
+      <!-- 右邊整個區塊 -->
+      <div class="mainContent p-8">
+        <!-- 右邊header -->
+        <div class="header d-flex justify-content-between mb-11">
+          <div class="d-flex align-items-center">
+            <h2 class="font-l bold mr-12-5">Admin</h2>
+
+            <a href="#" class="d-flex">
+              <span class="material-symbols-outlined mr-2"> add </span>
+              <p class="bold">Add New Admin</p>
+            </a>
+          </div>
+          <div class="d-flex">
+            <ul class="d-flex align-items-center">
+              <li class="mr-6">
+                <a href="#">
+                  <span class="material-symbols-outlined"> search </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                    notifications_active
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 右邊作業列表 -->
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">
+                <a href="#" class="d-flex align-items-center">
+                  <span class="mr-2">ID</span>
+                  <span class="material-symbols-outlined arrow">
+                    arrow_downward
+                  </span>
+                </a>
+              </th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Verified</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">#1</th>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <a href="#">
+                  <span class="material-symbols-outlined mr-6">
+                    visibility
+                  </span>
+                </a>
+                <a href="#"
+                  ><span class="material-symbols-outlined"> edit </span></a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">#1</th>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td>Yes</td>
+              <td class="text-end">
+                <a href="#">
+                  <span class="material-symbols-outlined mr-6">
+                    visibility
+                  </span>
+                </a>
+                <a href="#"
+                  ><span class="material-symbols-outlined"> edit </span></a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
     <!-- 導入bs5 js cdn -->
     <!-- Bootstrap JS -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
